@@ -689,17 +689,17 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
     draftAndPublish: false;
   };
   attributes: {
-    hero_title: Attribute.String;
-    hero_content: Attribute.Text;
-    menu_title: Attribute.String;
-    about_title: Attribute.String;
-    about_content: Attribute.Text;
-    howitwork_title: Attribute.String;
-    delivery_title: Attribute.String;
-    delivery_content: Attribute.Text;
-    delivery_time: Attribute.String;
-    faq_title: Attribute.String;
-    feedback_title: Attribute.String;
+    hero_title: Attribute.String & Attribute.Required;
+    hero_content: Attribute.Text & Attribute.Required;
+    menu_title: Attribute.String & Attribute.Required;
+    about_title: Attribute.String & Attribute.Required;
+    about_content: Attribute.Text & Attribute.Required;
+    howitwork_title: Attribute.String & Attribute.Required;
+    delivery_title: Attribute.String & Attribute.Required;
+    delivery_content: Attribute.Text & Attribute.Required;
+    delivery_time: Attribute.String & Attribute.Required;
+    faq_title: Attribute.String & Attribute.Required;
+    feedback_title: Attribute.String & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -723,17 +723,18 @@ export interface ApiProductProduct extends Schema.CollectionType {
     singularName: 'product';
     pluralName: 'products';
     displayName: 'Product';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     title: Attribute.String & Attribute.Required;
-    price: Attribute.Integer;
+    price: Attribute.Decimal;
     description: Attribute.Text;
     slug: Attribute.UID<'api::product.product', 'title'> & Attribute.Required;
     image: Attribute.Media;
-    energy: Attribute.Integer;
+    kcal: Attribute.String & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

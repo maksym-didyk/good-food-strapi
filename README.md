@@ -10,16 +10,6 @@ npm run develop
 yarn develop
 ```
 
-### `start`
-
-Start your Strapi application with autoReload disabled.
-
-```
-npm run start
-# or
-yarn start
-```
-
 ### `build`
 
 Build your admin panel.
