@@ -47,6 +47,11 @@
     },
     "carbs": {
       "type": "string"
+    },
+    "menu": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menu.menu"
     }
   }
 }

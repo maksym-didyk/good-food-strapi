@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_menu_dishes",
+  "info": {
+    "displayName": "Dish",
+    "icon": "restaurant"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

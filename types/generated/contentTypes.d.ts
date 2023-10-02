@@ -738,6 +738,7 @@ export interface ApiProductProduct extends Schema.CollectionType {
     prots: Attribute.String;
     fats: Attribute.String;
     carbs: Attribute.String;
+    menu: Attribute.Component<'menu.menu', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

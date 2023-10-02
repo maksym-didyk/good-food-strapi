@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_menu_menus",
+  "info": {
+    "displayName": "Menu",
+    "icon": "file",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "day": {
+      "type": "integer",
+      "required": true,
+      "unique": false,
+      "default": 1,
+      "max": 7,
+      "min": 1
+    },
+    "title": {
+      "type": "string"
+    },
+    "dish": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menu.dish"
+    }
+  }
+}
