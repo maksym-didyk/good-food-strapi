@@ -38,6 +38,15 @@
     "kcal": {
       "type": "string",
       "required": true
+    },
+    "prots": {
+      "type": "string"
+    },
+    "fats": {
+      "type": "string"
+    },
+    "carbs": {
+      "type": "string"
     }
   }
 }

@@ -735,6 +735,9 @@ export interface ApiProductProduct extends Schema.CollectionType {
     slug: Attribute.UID<'api::product.product', 'title'> & Attribute.Required;
     image: Attribute.Media;
     kcal: Attribute.String & Attribute.Required;
+    prots: Attribute.String;
+    fats: Attribute.String;
+    carbs: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
