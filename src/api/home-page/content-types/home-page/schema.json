@@ -80,7 +80,7 @@
       }
     },
     "delivery_content": {
-      "type": "text",
+      "type": "string",
       "required": true,
       "pluginOptions": {
         "i18n": {

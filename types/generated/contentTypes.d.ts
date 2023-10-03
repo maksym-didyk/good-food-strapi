@@ -743,7 +743,7 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
           localized: true;
         };
       }>;
-    delivery_content: Attribute.Text &
+    delivery_content: Attribute.String &
       Attribute.Required &
       Attribute.SetPluginOptions<{
         i18n: {

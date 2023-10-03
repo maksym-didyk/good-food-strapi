@@ -8,8 +8,8 @@ export interface FaqAnswer extends Schema.Component {
     description: '';
   };
   attributes: {
-    Question: Attribute.String & Attribute.Required;
-    Answer: Attribute.Text;
+    question: Attribute.String & Attribute.Required;
+    answer: Attribute.Text;
   };
 }
 
@@ -22,7 +22,7 @@ export interface FaqFaq extends Schema.Component {
   };
   attributes: {
     title: Attribute.String & Attribute.Required;
-    question: Attribute.Component<'faq.answer', true>;
+    questions: Attribute.Component<'faq.answer', true>;
   };
 }
 
