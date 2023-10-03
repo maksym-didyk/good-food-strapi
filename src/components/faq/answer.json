@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_faq_answers",
+  "info": {
+    "displayName": "Question",
+    "icon": "question",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Question": {
+      "type": "string",
+      "required": true
+    },
+    "Answer": {
+      "type": "text"
+    }
+  }
+}
