@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_howitwork_how_it_works",
+  "info": {
+    "displayName": "How it work",
+    "icon": "monitor"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "text",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

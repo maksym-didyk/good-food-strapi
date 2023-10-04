@@ -1,5 +1,17 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
+export interface AboutAbout extends Schema.Component {
+  collectionName: 'components_about_abouts';
+  info: {
+    displayName: 'String';
+    icon: 'information';
+    description: '';
+  };
+  attributes: {
+    string: Attribute.String & Attribute.Required;
+  };
+}
+
 export interface FaqAnswer extends Schema.Component {
   collectionName: 'components_faq_answers';
   info: {
@@ -23,6 +35,19 @@ export interface FaqFaq extends Schema.Component {
   attributes: {
     title: Attribute.String & Attribute.Required;
     questions: Attribute.Component<'faq.answer', true>;
+  };
+}
+
+export interface HowitworkHowItWork extends Schema.Component {
+  collectionName: 'components_howitwork_how_it_works';
+  info: {
+    displayName: 'How it work';
+    icon: 'monitor';
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+    content: Attribute.Text & Attribute.Required;
+    image: Attribute.Media;
   };
 }
 
@@ -54,8 +79,10 @@ export interface MenuMenu extends Schema.Component {
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
+      'about.about': AboutAbout;
       'faq.answer': FaqAnswer;
       'faq.faq': FaqFaq;
+      'howitwork.how-it-work': HowitworkHowItWork;
       'menu.dish': MenuDish;
       'menu.menu': MenuMenu;
     }

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_about_abouts",
+  "info": {
+    "displayName": "String",
+    "icon": "information",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "string": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

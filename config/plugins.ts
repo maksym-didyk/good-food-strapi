@@ -10,7 +10,6 @@ export default ({ env }) => ({
       },
       actionOptions: {
         upload: {},
-        edit: {},
         delete: {},
       },
     },
