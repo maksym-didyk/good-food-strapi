@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_feedback_feedbacks",
+  "info": {
+    "displayName": "Paragraph",
+    "icon": "italic",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "paragraph": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

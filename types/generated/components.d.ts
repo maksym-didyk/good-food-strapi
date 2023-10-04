@@ -38,6 +38,30 @@ export interface FaqFaq extends Schema.Component {
   };
 }
 
+export interface FeedbackFeedback extends Schema.Component {
+  collectionName: 'components_feedback_feedbacks';
+  info: {
+    displayName: 'Paragraph';
+    icon: 'italic';
+    description: '';
+  };
+  attributes: {
+    paragraph: Attribute.Text & Attribute.Required;
+  };
+}
+
+export interface FeedbackParagraphRed extends Schema.Component {
+  collectionName: 'components_feedback_paragraph_reds';
+  info: {
+    displayName: 'Paragraph_red';
+    icon: 'italic';
+    description: '';
+  };
+  attributes: {
+    paragraph_red: Attribute.String & Attribute.Required;
+  };
+}
+
 export interface HowitworkHowItWork extends Schema.Component {
   collectionName: 'components_howitwork_how_it_works';
   info: {
@@ -82,6 +106,8 @@ declare module '@strapi/types' {
       'about.about': AboutAbout;
       'faq.answer': FaqAnswer;
       'faq.faq': FaqFaq;
+      'feedback.feedback': FeedbackFeedback;
+      'feedback.paragraph-red': FeedbackParagraphRed;
       'howitwork.how-it-work': HowitworkHowItWork;
       'menu.dish': MenuDish;
       'menu.menu': MenuMenu;
