@@ -8,12 +8,25 @@
   "options": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "dish": {
       "type": "component",
       "repeatable": true,
       "component": "menu.dish"
+    },
+    "kcal": {
+      "type": "string"
+    },
+    "prots": {
+      "type": "string"
+    },
+    "fats": {
+      "type": "string"
+    },
+    "carbs": {
+      "type": "string"
     }
   }
 }

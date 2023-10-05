@@ -795,9 +795,7 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
           localized: false;
         };
       }>;
-    feedback_content: Attribute.DynamicZone<
-      ['feedback.feedback', 'feedback.paragraph-red']
-    > &
+    feedback_paragraph: Attribute.Component<'feedback.feedback'> &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;

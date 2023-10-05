@@ -158,17 +158,15 @@
         }
       }
     },
-    "feedback_content": {
+    "feedback_paragraph": {
+      "type": "component",
+      "repeatable": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "dynamiczone",
-      "components": [
-        "feedback.feedback",
-        "feedback.paragraph-red"
-      ]
+      "component": "feedback.feedback"
     }
   }
 }

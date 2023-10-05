@@ -46,19 +46,9 @@ export interface FeedbackFeedback extends Schema.Component {
     description: '';
   };
   attributes: {
-    paragraph: Attribute.Text & Attribute.Required;
-  };
-}
-
-export interface FeedbackParagraphRed extends Schema.Component {
-  collectionName: 'components_feedback_paragraph_reds';
-  info: {
-    displayName: 'Paragraph_red';
-    icon: 'italic';
-    description: '';
-  };
-  attributes: {
-    paragraph_red: Attribute.String & Attribute.Required;
+    paragraph_1: Attribute.Text & Attribute.Required;
+    paragraph_2: Attribute.Text;
+    paragraph_red: Attribute.Text;
   };
 }
 
@@ -95,8 +85,12 @@ export interface MenuMenu extends Schema.Component {
     description: '';
   };
   attributes: {
-    title: Attribute.String;
+    title: Attribute.String & Attribute.Required;
     dish: Attribute.Component<'menu.dish', true>;
+    kcal: Attribute.String;
+    prots: Attribute.String;
+    fats: Attribute.String;
+    carbs: Attribute.String;
   };
 }
 
@@ -107,7 +101,6 @@ declare module '@strapi/types' {
       'faq.answer': FaqAnswer;
       'faq.faq': FaqFaq;
       'feedback.feedback': FeedbackFeedback;
-      'feedback.paragraph-red': FeedbackParagraphRed;
       'howitwork.how-it-work': HowitworkHowItWork;
       'menu.dish': MenuDish;
       'menu.menu': MenuMenu;

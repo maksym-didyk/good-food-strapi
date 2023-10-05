@@ -7,9 +7,15 @@
   },
   "options": {},
   "attributes": {
-    "paragraph": {
+    "paragraph_1": {
       "type": "text",
       "required": true
+    },
+    "paragraph_2": {
+      "type": "text"
+    },
+    "paragraph_red": {
+      "type": "text"
     }
   }
 }
