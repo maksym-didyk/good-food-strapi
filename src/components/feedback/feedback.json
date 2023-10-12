@@ -16,6 +16,13 @@
     },
     "paragraph_red": {
       "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

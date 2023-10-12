@@ -167,6 +167,16 @@
         }
       },
       "component": "feedback.feedback"
+    },
+    "comment": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "comments.comments"
     }
   }
 }

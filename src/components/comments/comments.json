@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_comments_comments",
+  "info": {
+    "displayName": "Comments",
+    "icon": "emotionHappy",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string",
+      "required": false
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "author": {
+      "type": "string",
+      "required": true
+    },
+    "comment": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

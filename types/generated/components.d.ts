@@ -12,6 +12,21 @@ export interface AboutAbout extends Schema.Component {
   };
 }
 
+export interface CommentsComments extends Schema.Component {
+  collectionName: 'components_comments_comments';
+  info: {
+    displayName: 'Comments';
+    icon: 'emotionHappy';
+    description: '';
+  };
+  attributes: {
+    url: Attribute.String;
+    icon: Attribute.Media;
+    author: Attribute.String & Attribute.Required;
+    comment: Attribute.Text & Attribute.Required;
+  };
+}
+
 export interface FaqAnswer extends Schema.Component {
   collectionName: 'components_faq_answers';
   info: {
@@ -49,6 +64,7 @@ export interface FeedbackFeedback extends Schema.Component {
     paragraph_1: Attribute.Text & Attribute.Required;
     paragraph_2: Attribute.Text;
     paragraph_red: Attribute.Text;
+    image: Attribute.Media;
   };
 }
 
@@ -98,6 +114,7 @@ declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'about.about': AboutAbout;
+      'comments.comments': CommentsComments;
       'faq.answer': FaqAnswer;
       'faq.faq': FaqFaq;
       'feedback.feedback': FeedbackFeedback;
