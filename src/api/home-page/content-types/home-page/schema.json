@@ -177,6 +177,15 @@
         }
       },
       "component": "comments.comments"
+    },
+    "comments_title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
     }
   }
 }
