@@ -68,6 +68,29 @@ export interface FeedbackFeedback extends Schema.Component {
   };
 }
 
+export interface FooterFooter extends Schema.Component {
+  collectionName: 'components_footer_footers';
+  info: {
+    displayName: 'Footer menu';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+    url: Attribute.String & Attribute.Required;
+  };
+}
+
+export interface HeaderHeaderMenu extends Schema.Component {
+  collectionName: 'components_header_header_menus';
+  info: {
+    displayName: 'Header menu';
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+    url: Attribute.String & Attribute.Required;
+  };
+}
+
 export interface HowitworkHowItWork extends Schema.Component {
   collectionName: 'components_howitwork_how_it_works';
   info: {
@@ -118,6 +141,8 @@ declare module '@strapi/types' {
       'faq.answer': FaqAnswer;
       'faq.faq': FaqFaq;
       'feedback.feedback': FeedbackFeedback;
+      'footer.footer': FooterFooter;
+      'header.header-menu': HeaderHeaderMenu;
       'howitwork.how-it-work': HowitworkHowItWork;
       'menu.dish': MenuDish;
       'menu.menu': MenuMenu;

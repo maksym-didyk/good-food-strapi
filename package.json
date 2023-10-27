@@ -2,7 +2,7 @@
   "name": "good-food-strapi",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "Good Food App",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -10,14 +10,14 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-i18n": "4.14.4",
-    "@strapi/plugin-users-permissions": "4.14.4",
-    "@strapi/provider-upload-cloudinary": "^4.14.4",
-    "@strapi/strapi": "4.14.4",
+    "@strapi/plugin-i18n": "4.15.0",
+    "@strapi/plugin-users-permissions": "4.15.0",
+    "@strapi/provider-upload-cloudinary": "^4.15.0",
+    "@strapi/strapi": "4.15.0",
     "pg": "8.8.0"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Maksym Didyk"
   },
   "strapi": {
     "uuid": "1d2ce8b8-cb34-4d40-a76e-61d3b2bfa499"

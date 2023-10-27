@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_footer_footers",
+  "info": {
+    "displayName": "Footer menu",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
