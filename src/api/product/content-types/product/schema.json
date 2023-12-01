@@ -41,11 +41,6 @@
         }
       }
     },
-    "slug": {
-      "type": "uid",
-      "targetField": "title",
-      "required": true
-    },
     "image": {
       "type": "media",
       "multiple": true,
@@ -107,6 +102,18 @@
       "relation": "oneToMany",
       "target": "api::menu.menu",
       "mappedBy": "product"
+    },
+    "slug": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "customField",
+      "options": {
+        "pattern": "title"
+      },
+      "customField": "plugin::slug.slug"
     }
   }
 }

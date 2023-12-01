@@ -1065,7 +1065,6 @@ export interface ApiProductProduct extends Schema.CollectionType {
           localized: true;
         };
       }>;
-    slug: Attribute.UID<'api::product.product', 'title'> & Attribute.Required;
     image: Attribute.Media &
       Attribute.SetPluginOptions<{
         i18n: {
@@ -1108,6 +1107,18 @@ export interface ApiProductProduct extends Schema.CollectionType {
       'oneToMany',
       'api::menu.menu'
     >;
+    slug: Attribute.String &
+      Attribute.CustomField<
+        'plugin::slug.slug',
+        {
+          pattern: 'title';
+        }
+      > &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
